@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <aside className='sidebar'>
       <div className='flex size-full flex-col gap-4'>
-        <Link href='/' className='sidebar-logo'>
+        <Link href='/dashboard' className='sidebar-logo'>
           <Image src={'/duno_text_logo.png'} alt='logo' width={400} height={50}/>
         </Link>
         <nav className='sidebar-nav'>
