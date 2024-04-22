@@ -14,7 +14,7 @@ import {
 import Link from 'next/link'
 import Image from 'next/image'
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import { navLinks } from '@/constants'
+import { navLinks, sheetLinks } from '@/constants'
 import { usePathname } from 'next/navigation'
 import { ThemeProvider } from 'next-themes';
 
@@ -75,10 +75,10 @@ const MobileAppBar = () => {
               <>
               <Image src="/duno_text_logo.png" alt="logo" width={190} height={80}/>
               <ul className='header-nav_elements'>
-              {navLinks.map((link) => {
+              {sheetLinks.map((link) => {
                 const isActive = link.route === pathname
                 return (
-                  <li key={link.route} className={`${isActive && 'sheet-gradient-selected-item text-white'}  p-18 flex whitespace-nowrap text-slate-900`}>
+                  <li key={link.route} className={`${isActive && 'sheet-gradient-selected-item text-white'}  p-18 flex whitespace-nowrap text-slate-300`}>
 
                     <Link className='sidebar-link' href={link.route}>
                       <Image 
