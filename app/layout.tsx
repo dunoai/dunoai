@@ -1,19 +1,17 @@
 import type { Metadata } from "next";
-import { Poppins, IBM_Plex_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import { ClerkProvider, SignedOut } from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
+import {dark} from "@clerk/themes";
 
-const poppins = Poppins({
+
+
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: "100"
+  weight: ["400", "500", "600", "700"]
 });
 
-const IBMPlex = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: '--font-ibm-plex'
-});
+
 
 export const metadata: Metadata = {
   title: "Duno",
@@ -26,8 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en"><body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>{children}</body>
+    <ClerkProvider appearance={{
+      baseTheme: dark
+    }}>
+      <html lang="en"><body className="montserrat">{children}</body>
   </html>
   </ClerkProvider>
     

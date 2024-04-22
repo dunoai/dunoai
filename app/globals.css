@@ -75,12 +75,32 @@
   }
 }
 
-.auth {
-  @apply flex-center min-h-screen w-full gradient-background-light-tr;
-  background-image: url('/images/background-image.png');
-  background-size: cover; /* Ensure the background image covers the entire element */
-  background-position: center; 
+@media (prefers-color-scheme: light) {
+  .auth {
+    @apply flex-center min-h-screen w-full gradient-background-light-tr;
+    background-image: url('/images/background-image.png');
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center; 
+
+    .root {
+      @apply flex min-h-screen w-full flex-col lg:flex-row text-white;
+    }
+  }
 }
+
+@media (prefers-color-scheme: dark) {
+  .auth {
+    @apply flex-center min-h-screen w-full gradient-background-dark-tr;
+    background-image: url('/images/background-image.png');
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center; 
+
+    .root {
+      @apply flex min-h-screen w-full flex-col lg:flex-row ;
+    }
+  }
+}
+
 
 .landing-page {
   
@@ -94,7 +114,7 @@
 }
 
 .root {
-  @apply flex min-h-screen w-full flex-col lg:flex-row gradient-background-light-tr;
+  @apply flex min-h-screen w-full flex-col lg:flex-row ;
 }
 
 .root-container {
@@ -344,7 +364,7 @@
 
   /* Navbar Component */
   .header {
-    @apply flex-between flex-row-reverse fixed h-16 w-screen -z-0 border-b-2 border-blue-200 bg-slate-100;
+    @apply flex-between fixed h-16 w-screen z-10;
   }
   
 
@@ -369,11 +389,11 @@
 
   /* Sidebar Component */
   .sidebar {
-    @apply hidden h-screen w-min z-10 bg-slate-100 shadow-md shadow-purple-200/50 lg:flex;
+    @apply hidden h-screen w-24 lg:flex;
   }
 
   .sidebar-logo {
-    @apply flex items-center gap-2 md:py-2 px-5;
+    @apply flex items-center gap-2 md:py-2 px-5 dark:text-white text-black;
   }
 
   .sidebar-nav {
@@ -385,7 +405,7 @@
   }
 
   .sidebar-nav_element {
-    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-tr-lg rounded-tl-lg rounded-bl-lg rounded-br-[150px] bg-cover  transition-all hover:bg-blue-950 hover:text-white hover:shadow-inner;
+    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-tr-lg rounded-tl-[0px] rounded-bl-[0px] rounded-br-[35px] bg-cover  transition-all hover:bg-purple-600 hover:shadow-inner;
   }
 
   .sidebar-link {
@@ -431,7 +451,7 @@
 .cl-userButtonOuterIdentifier {
   font-size: 16px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
 }
 
 .cl-logoImage {

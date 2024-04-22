@@ -1,41 +1,41 @@
 export const navLinks = [
     {
-      label: "Dashboard",
+      label: " ",
       route: "/dashboard",
       icon: "/assets/icons/icons/home.svg",
     },
     {
-      label: "My Business",
+      label: " ",
       route: "/my-business",
       icon: "/assets/icons/icons/image.svg",
     },
     {
-      label: "Collaboration",
+      label: " ",
       route: "/collaboration",
       icon: "/assets/icons/icons/stars.svg",
     },
     {
-      label: "Analytics",
+      label: " ",
       route: "/analytics",
       icon: "/assets/icons/icons/scan.svg",
     },
     {
-      label: "Market Research",
+      label: " ",
       route: "/market-research",
       icon: "/assets/icons/icons/camera.svg",
     },
     {
-      label: "Finances",
+      label: " ",
       route: "/finances",
       icon: "/assets/icons/icons/bag.svg",
     },
     {
-      label: "Products and Services",
+      label: " ",
       route: "/product-services",
       icon: "/assets/icons/icons/profile.svg",
     },
     {
-      label: "Calendar",
+      label: " ",
       route: "/calendar",
       icon: "/assets/icons/icons/filter.svg",
     },

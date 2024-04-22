@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from "@/components/ui/button"
 
 import {
@@ -14,14 +14,43 @@ import Image from 'next/image'
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { navLinks } from '@/constants'
 import { usePathname } from 'next/navigation'
+import { ThemeProvider } from 'next-themes';
 
 
 const MobileAppBar = () => {
   const pathname = usePathname();
+  
 
+  
   return (
-    <header className='header fixed top-0 right-0 py-5 px-5 '>
     
+
+    <header className='header fixed top-0 right-0 py-5 px-5 '>
+      <Link href="/dashboard">
+      <Image src="/duno_logo.png"
+      width={50}
+      height={50}
+      alt="logo"
+      >
+
+      </Image>
+      </Link>
+      <div>
+        <nav className='hidden lg:flex lg:gap-2 lg:items-center'>
+          <ThemeProvider></ThemeProvider>
+          <Link href="/notifications">
+            <Image src="/assets/icons/icons/notifications.svg" alt="notifications" width={25} height={25} >
+
+            </Image>
+          </Link>
+          
+          <div>
+            <UserButton afterSignOutUrl='/'/>
+            
+          </div>
+          
+        </nav>
+      </div>
       <nav className='flex gap-2 items-center lg:hidden'>
         <SignedIn>|
           

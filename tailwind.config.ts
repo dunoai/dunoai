@@ -1,3 +1,5 @@
+import { config } from "process";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -159,4 +161,7 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  
 };
+
+export default config;
