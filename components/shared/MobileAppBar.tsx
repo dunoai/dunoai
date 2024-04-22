@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+
 
 import {
   Sheet,
@@ -37,6 +39,9 @@ const MobileAppBar = () => {
       </Link>
       <div>
         <nav className='hidden lg:flex lg:gap-2 lg:items-center'>
+          <Input type="search" placeholder="Search here..." className='border dark:border-white light:border-black rounded-full' />
+            
+          
           <ThemeProvider></ThemeProvider>
           <Link href="/notifications">
             <Image src="/assets/icons/icons/notifications.svg" alt="notifications" width={25} height={25} >
