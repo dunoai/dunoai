@@ -77,7 +77,7 @@
 
 @media (prefers-color-scheme: light) {
   .auth {
-    @apply flex-center min-h-screen w-full gradient-background-light-tr;
+    @apply flex-center min-h-screen w-full ;
     background-image: url('/images/background-image.png');
     background-size: cover; /* Ensure the background image covers the entire element */
     background-position: center; 
@@ -90,7 +90,7 @@
 
 @media (prefers-color-scheme: dark) {
   .auth {
-    @apply flex-center min-h-screen w-full gradient-background-dark-tr;
+    @apply flex-center min-h-screen w-full ;
     background-image: url('/images/background-image.png');
     background-size: cover; /* Ensure the background image covers the entire element */
     background-position: center; 
@@ -110,7 +110,7 @@
 }
 
 .onboarding {
-  @apply flex-center min-h-screen w-full gradient-background-light-tr 
+  @apply flex-center min-h-screen w-full 
 }
 
 .root {
@@ -133,21 +133,13 @@
 
   
 
-  .gradient-background-dark-tr {
-    @apply bg-gradient-to-tr from-slate-900 from-25% via-blue-950 via-50% to-slate-900 to-85% 
-  }
+  
 
-  .gradient-background-dark-b {
-    @apply bg-gradient-to-b from-slate-950 from-25% via-blue-950 via-50% to-slate-950 to-80% 
-  }
+  
 
-  .gradient-background-light-tr {
-    @apply bg-gradient-to-tr from-slate-50 from-25% via-zinc-100 via-50% to-slate-100 to-85% 
-  }
+  
 
-  .gradient-background-light-b {
-    @apply bg-gradient-to-b from-slate-50 from-25% via-zinc-100 via-50% to-slate-100 to-80% 
-  }
+  
 
   .gradient-selected-item {
     @apply bg-gradient-to-r from-blue-800 from-25% via-blue-500 via-50% to-blue-900 to-85%
@@ -389,7 +381,7 @@
 
   /* Sidebar Component */
   .sidebar {
-    @apply hidden h-screen w-24 lg:flex;
+    @apply hidden h-screen w-28 lg:flex;
   }
 
   .sidebar-logo {

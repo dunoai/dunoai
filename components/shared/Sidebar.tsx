@@ -27,7 +27,7 @@ const Sidebar = () => {
               {navLinks.slice(0, 8).map((link) => {
                 const isActive = link.route === pathname
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group
+                  <li key={link.route} className={`sidebar-nav_element pl-4 pr-4 group
                   ${ isActive ? 'gradient-selected-item text-white' : 'text-gray-100'} `}>
 
                     <Link className='sidebar-link' href={link.route}>

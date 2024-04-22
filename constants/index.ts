@@ -2,42 +2,42 @@ export const navLinks = [
     {
       label: " ",
       route: "/dashboard",
-      icon: "/assets/icons/icons/home.svg",
+      icon: "/assets/icons/home.svg",
     },
     {
       label: " ",
       route: "/my-business",
-      icon: "/assets/icons/icons/image.svg",
+      icon: "/assets/icons/lightning.svg",
     },
     {
       label: " ",
       route: "/collaboration",
-      icon: "/assets/icons/icons/stars.svg",
+      icon: "/assets/icons/phone.svg",
     },
     {
       label: " ",
       route: "/analytics",
-      icon: "/assets/icons/icons/scan.svg",
+      icon: "/assets/icons/market.svg",
     },
     {
       label: " ",
       route: "/market-research",
-      icon: "/assets/icons/icons/camera.svg",
+      icon: "/assets/icons/search.svg",
     },
     {
       label: " ",
       route: "/finances",
-      icon: "/assets/icons/icons/bag.svg",
+      icon: "/assets/icons/market-purchase-svgrepo-com.svg",
     },
     {
       label: " ",
       route: "/product-services",
-      icon: "/assets/icons/icons/profile.svg",
+      icon: "/assets/icons/truck.svg",
     },
     {
       label: " ",
       route: "/calendar",
-      icon: "/assets/icons/icons/filter.svg",
+      icon: "/assets/icons/calendar.svg",
     },
   ];
   
